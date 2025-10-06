@@ -50,9 +50,9 @@ def on_select(event):
     selected = tree.selection()
     for iid in selected:
         global temptag
-        text = tree.item(iid, "text")
+        text = tree.item(iid, "text") # debug
         tags = tree.item(iid, "tag")
-        print(f"Название: {text}, Ссылка: {tags}")
+        print(f"Название: {text}, Ссылка: {tags}") # debug
         temptag = tags
 
 
